@@ -18,3 +18,10 @@ function calculate(input){
 function clearDisplay1(){
     display.value = display.value.slice(0,-1);
 }
+
+
+
+
+
+
+
