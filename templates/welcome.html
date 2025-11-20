@@ -7,20 +7,37 @@
     <!-- <meta http-equiv="refresh" content="3;url=/home"> -->
 </head>
 <body>
-    <style>
-    body {
+  <style>
+      body {
       margin: 0;
       display: flex;
       justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
       align-items: center;
       height: 100vh;
       font-family: Arial;
       transition: opacity 1s ease-in-out;
+      background-color: black;
+      color: white;
     }
 
     .fade-out {
       opacity: 0;
     }
+    .spinner {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1.5s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
   </style>
 
     WELCOME TO MY CALCULATOR APP
