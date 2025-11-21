@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <meta http-equiv="refresh" content="3;url=/home"> -->
-</head>
-<body>
-  <style>
+
+<style>
       body {
-      margin: 0;
       display: flex;
-      justify-content: center;
-      font-family: 'Courier New', Courier, monospace;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial;
-      transition: opacity 1s ease-in-out;
-      background-color: black;
-      color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            transition: opacity 1s ease;
+            color: white;
     }
 
     .fade-out {
@@ -28,20 +26,31 @@
             border: 8px solid #f3f3f3; /* Light grey */
             border-top: 8px solid #3498db; /* Blue */
             border-radius: 50%;
-            width: 80px;
-            height: 80px;
+            width: 30px;
+            height: 30px;
             animation: spin 1.5s linear infinite;
             margin-bottom: 20px;
+            align-items: center;
         }
 
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-  </style>
+    .fon{
+        font-size: 30px;  
+        font-family: Courier, monospace;    
+        }
+</style>
+</head>
+<body>
+   <p class="fon">  WELCOME TO MY CALCULATOR APP  </p><br>
+    <p>Loading...</p>
 
-    WELCOME TO MY CALCULATOR APP
-    <div class="spinner"></div>
+
+ 
+  <div class="spinner"></div>
+
 </body>
   <script src="/static/welcome.js"></script>
 </html>
